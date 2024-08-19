@@ -2325,7 +2325,7 @@ var UnityLoader = UnityLoader || {
             if ("Module" == a)
                 for (var s in r[a]) i.Module[s] = r[a][s];
             else i[a] = r[a];
-        return n(e, i) || document.addEventListener("DOMContentLoaded", function() {
+        return n(e, i) || document.addEventListener("DOMLoaded", function() {
             n(e, i)
         }), i
     },
